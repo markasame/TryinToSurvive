@@ -40,7 +40,7 @@ namespace TryinToSurvive
                 }
                 else
                 {
-                    MessageBox.Show($"Password: {Ready_Password} User: {Username}");
+                    MessageBox.Show($"Wrong username or password");
                 }
 
 
