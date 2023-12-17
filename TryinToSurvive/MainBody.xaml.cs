@@ -101,7 +101,7 @@ namespace TryinToSurvive
 
             jObject.TryGetValue("meals", StringComparison.OrdinalIgnoreCase, out mealsToken);
             List<Recipe> meals = mealsToken.ToObject<List<Recipe>>();
-            string ready_string = $"Name:{meals[0].StrMeal}\n" + $"Cathegory{meals[0].StrMeal}\n" + $"Country:{meals[0].StrArea}\n " + $"Ingredients:\n";
+            string ready_string = $"Name:{meals[0].StrMeal}\n" + $"Cathegory:{meals[0].StrCategory}\n" + $"Country:{meals[0].StrArea}\n " + $"Ingredients:\n";
             for (int i = 1; i <= 20; i++)
             {
                 string ingredientName = $"StrIngredient{i}";
